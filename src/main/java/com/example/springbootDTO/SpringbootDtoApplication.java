@@ -28,7 +28,7 @@ public class SpringbootDtoApplication implements CommandLineRunner {
 
 		Location location = new Location();
 		location.setPlace("casablanca");
-		location.setDescription("casablanca sakani L2 N°226 ");
+		location.setDescription("casablanca el zohra L2 N°226 ");
 		location.setLongitude(40.2);
 		location.setLatitude(38.2);
 		iLocationRepository.save(location);
@@ -41,12 +41,5 @@ public class SpringbootDtoApplication implements CommandLineRunner {
 		user.setLocation(location);
 		iUserRepository.save(user);
 
-		User user1 = new User();
-		user1.setEmail("oussama@email.com");
-		user1.setFirst_name("oussama");
-		user1.setLast_name("mouslih");
-		user1.setPassword("Mouslih2001");
-		user1.setLocation(location);
-		iUserRepository.save(user1);
 	}
 }
